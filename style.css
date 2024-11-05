@@ -1,0 +1,179 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.wrap{
+    margin: -60px 30px 30px 30px;
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); 
+    background-color: #fff; 
+    padding: 15px;
+}
+
+section{
+    margin: 0 5%;
+    padding-bottom: 60px;
+}
+
+h2{
+    color: #43B02A;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+/* header */
+
+header{
+    height: 600px;
+    background: url(./images/top-header.jpg) center;
+    overflow: hidden; 
+    /* приховує оверфлоу контейнера */
+}
+
+h1{
+    padding-top: 250px;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 1px 1px 3px #fff;
+}
+
+.logo{
+    float: left;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.logo img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    padding: 10px 40px;
+    background-color: #43B02A;
+    color: white;
+    position: fixed;
+    z-index: 100;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin: 14px auto;
+}
+
+nav li{
+    margin-left: 10px;
+    color: white;
+    display: inline-block;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+/* header end */
+
+/* Our Camp */
+.teamsContainer{
+    display: flex;
+
+    /* визначає основну вісь */
+    /* в данному випадку x */
+    flex-direction: row;
+
+    /* відповідає за розташування обєктів по основній осі */
+    justify-content: center;
+
+    /* відповідає за розташування обєктів по другорядній осі */
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+
+
+.teamsCard{
+    width: 330px;
+    min-width: 330px;
+    background: #4e4e4e;
+    padding: 40px;
+    border-radius: 15px;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Our Camp */
+
+
+/* What's waiting for you? */
+
+.programInner{
+    height: 380px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.programInner::-webkit-scrollbar{
+    display: none;
+}
+
+.programInner h3{
+    background-color: #fcc068 ;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.programInner h3:nth-of-type(2n){
+    background-color: #24ad64 ;
+}
+
+.programInner h3:nth-of-type(3n){
+    background-color: #8026c1 ;
+}
+
+.alignright{
+    float: right;
+    border-radius: 6px;
+    margin: 0 8px 20px 15px;
+    max-width: 450px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.clear{
+    clear: both;
+}
+
+/* What's waiting for you? */
+
+.iconContainer{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    right: 20px;
+}
